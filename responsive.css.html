@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .responsive
+        {
+            height: 150px;
+            background-color:blueviolet;
+            color: white;
+            font-size: 33px;
+            text-align: center;
+            display: none;
+        }
+        @media (max-width: 480px)
+        {
+            #item1{
+                background-color: blue;
+                color: white;
+                display: block;
+            }
+        }
+        @media (min-width:481px) and (max-width:768px)
+        {
+            #item2{
+                background-color: rgb(255, 192, 240);
+                color: white;
+                display: block;
+            }
+        }
+        @media (min-width:769px) and (max-width:1024px)
+        {
+            #item3{
+                background-color: yellow;
+                color: white;
+                display: block;
+            }
+        }
+        @media (min-width:1025px) and (max-width:1440px)
+        {
+            #item4{
+                background-color:chartreuse;
+                color: white;
+                display: block;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="responsive" id="item1">Mobile Device</div>
+    <div class="responsive" id="item2">Tablet Device</div>
+    <div class="responsive" id="item3">Laptop Device</div>
+    <div class="responsive" id="item4">HD Device</div>
+</body>
+</html>
